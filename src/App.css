@@ -1,0 +1,62 @@
+/* App.css */
+
+
+.app-background {
+  background-image: url('https://images.unsplash.com/photo-1600298882283-40b4dcb8b211?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the larger card */
+.large-card {
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent white background */
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  /* Rounded corners */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 1.5rem;
+  /* Padding inside the card */
+  max-height: 500px;
+  /* Restrict height */
+  overflow-y: auto;
+  /* Scroll if content exceeds height */
+}
+
+/* Style for the smaller cards */
+.small-card {
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent white background */
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  /* Rounded corners */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 1rem;
+  /* Padding inside the card */
+  max-height: 300px;
+  /* Restrict height */
+  overflow-y: auto;
+  /* Scroll if content exceeds height */
+}
+
+/* Additional responsiveness */
+@media (max-width: 768px) {
+  .large-card {
+    /* Adjustments for smaller screens */
+    padding: 1rem;
+    max-height: 400px;
+    /* Adjust max-height for smaller screens */
+  }
+
+  .small-card {
+    /* Adjustments for smaller screens */
+    padding: 0.75rem;
+    max-height: 250px;
+    /* Adjust max-height for smaller screens */
+  }
+}
